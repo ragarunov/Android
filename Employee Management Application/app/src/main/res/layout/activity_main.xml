@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_msg"
+        android:id="@+id/HeaderTextView"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="verdana"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HeaderTextView"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:text="@string/add_employee"
+        android:fontFamily="verdana" />
+
+    <EditText
+        android:id="@+id/findEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="112dp"
+        android:fontFamily="verdana"
+        android:hint="@string/employee_id"
+        android:inputType="number"
+        android:maxLength="9"
+        android:textSize="15sp"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/findButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findEditText"
+        android:text="@string/find_employee_id"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="verdana"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/allButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:fontFamily="verdana"
+        android:text="@string/show_all_employees" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/allButton"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:fontFamily="verdana"
+        android:text="@string/about" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutButton"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:fontFamily="verdana"
+        android:text="@string/exit" />
+
+</RelativeLayout>

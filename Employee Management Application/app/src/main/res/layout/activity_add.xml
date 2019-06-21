@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Add">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_employee"
+        android:id="@+id/HeaderTextView"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="verdana"/>
+
+
+    <TextView
+        android:id="@+id/AddIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@id/HeaderTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="verdana"
+        android:text="@string/employee_id"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/AddNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AddIdTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="verdana"
+        android:text="@string/full_name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/AddPositionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AddNameTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="verdana"
+        android:text="@string/position"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/AddAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AddPositionTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="verdana"
+        android:text="@string/address"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/AddPhoneTextView"
+        android:layout_width="81dp"
+        android:layout_height="33dp"
+        android:layout_below="@id/AddAddressTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="verdana"
+        android:text="@string/phone"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/AddIdEditText"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HeaderTextView"
+        android:layout_alignStart="@+id/AddIdTextView"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/employee_id"
+        android:inputType="number"
+        android:maxLength="9"
+        android:textSize="12sp"
+        tools:ignore="Autofill"/>
+
+
+    <EditText
+        android:id="@+id/AddNameEditText"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AddIdTextView"
+        android:layout_alignStart="@+id/AddNameTextView"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="11dp"
+        android:hint="@string/full_name"
+        android:maxLength="24"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        tools:ignore="Autofill"/>
+
+    <EditText
+        android:id="@+id/AddPositionEditText"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AddNameEditText"
+        android:layout_alignStart="@+id/AddPositionTextView"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/position"
+        android:maxLength="24"
+        android:inputType="text"
+        android:textSize="12sp"
+        tools:ignore="Autofill"/>
+
+    <EditText
+        android:id="@+id/AddAddressEditText"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AddPositionEditText"
+        android:layout_alignStart="@+id/AddAddressTextView"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/address"
+        android:maxLength="24"
+        android:inputType="text"
+        android:textSize="12sp"
+        tools:ignore="Autofill"/>
+
+    <EditText
+        android:id="@+id/AddPhoneEditText"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AddAddressEditText"
+        android:layout_alignStart="@+id/AddPhoneTextView"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/phone"
+        android:maxLength="12"
+        android:inputType="phone"
+        android:textSize="12sp"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="72dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/AddPhoneTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="verdana"
+        android:text="@string/cancel"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="72dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/AddPhoneTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="verdana"
+        android:text="@string/add"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
